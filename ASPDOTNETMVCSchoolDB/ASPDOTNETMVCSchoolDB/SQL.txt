@@ -1,0 +1,52 @@
+﻿
+DROP TABLE student_table, teacher_table, staff_table;
+CREATE TABLE student_table
+(
+    student_id             INT NOT NULL IDENTITY PRIMARY KEY,
+    first_name            VARCHAR(50),
+    last_name             VARCHAR(50),
+    date_of_birth         date,
+    emergency_contact     VARCHAR(30),
+    class                 VARCHAR(5),
+    test_results          INTEGER,
+    home_address          VARCHAR(250),
+    medical_information   VARCHAR(250),  
+)
+
+
+CREATE TABLE teacher_table
+(
+    teacher_id             INT NOT NULL IDENTITY PRIMARY KEY,
+    first_name            VARCHAR(50),
+    last_name             VARCHAR(50),
+    speciality             VARCHAR(50),
+    emergency_contact     VARCHAR(30),
+    work_start_date             DATETIME,
+    salary                     FLOAT,
+    year_group                 VARCHAR(5),
+    home_address          VARCHAR(250),
+    bank_account          VARCHAR(40)
+)
+
+CREATE TABLE staff_table
+(
+    first_name            VARCHAR(50),
+    last_name             VARCHAR(50),
+    emergency_contact     VARCHAR(30),
+    contact_details       VARCHAR(30),
+    job_type              VARCHAR(50),
+    home_address          VARCHAR(250),
+    bank_account          VARCHAR(40)
+)
+
+CREATE TABLE Parent_table
+(
+    first_name            VARCHAR(50),
+    last_name             VARCHAR(50),
+    emergency_contact     VARCHAR(30),
+    contact_details       VARCHAR(30),
+    job_type              VARCHAR(50),
+    home_address          VARCHAR(250),
+    bank_account          VARCHAR(40)
+)
+
